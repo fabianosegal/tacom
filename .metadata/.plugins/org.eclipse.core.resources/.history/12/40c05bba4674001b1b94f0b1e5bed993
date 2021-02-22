@@ -1,0 +1,71 @@
+package questao9;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
+public class Questao9 {
+
+    private static ArrayList<Integer> arrayList;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int numero1 = Integer.parseInt(JOptionPane.showInputDialog(null,"Informe o primeiro número "));
+		int numero2 = Integer.parseInt(JOptionPane.showInputDialog(null,"Informe o segundo número "));
+		 List<Integer> list8 = new ArrayList<Integer>();
+		    List<Integer> list4 = new ArrayList<Integer>();
+
+		    for(int i = numero1; i < numero2; i++) {
+		        list4.add(i);
+		    }
+
+		    int numDivisores = 0;
+
+		    for (Integer numPrimo : list4) {
+		        for (int i = 1; i <= numPrimo; i++) {
+		            if (numPrimo % i == 0) {
+		                numDivisores++;
+		            }
+		        }
+
+		        if (numDivisores == 2) {
+		            list8.add(numPrimo);
+		        }
+		        numDivisores = 0;
+		    }
+
+		    System.out.println("10) Os números primos entre as duas listas são: " + list8);
+		    
+		    arrayList = new ArrayList<>();
+		    
+		   int i, j;
+		   boolean primo;
+		   
+		   for (i=numero1;i<=numero2;i++) {
+			   primo = true;
+			   
+			   if (i==1) primo = false;
+			   if (primo) {
+				   if ((i%2==0) && (i !=2)) {
+					   primo = false;
+				   }
+			   }
+			   if (primo) {
+				   for (j=3;j<=(1/2);j++) {
+					   if (i%j==0) {
+						   primo = false;
+						   break;
+					   }
+				   }
+			   }
+			   if (primo) {
+				   arrayList.add(i);
+			   }
+			   System.out.println("Lista de numeros primos encontrados de outra maneira : ");
+			   System.out.println(String.format("Há %d numeros primos entre %d e %d", arrayList.size(), numero1, numero2));
+		   }
+		   
+	}
+
+}

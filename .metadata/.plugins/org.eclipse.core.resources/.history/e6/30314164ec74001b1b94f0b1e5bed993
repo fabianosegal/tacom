@@ -1,0 +1,22 @@
+package questao14;
+
+import javax.swing.JOptionPane;
+
+public class Questao14 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float dolar;
+		float reais;
+		
+		dolar = Float.parseFloat(JOptionPane.showInputDialog(null,"Informe a cotação do dolar: "));
+		reais = Float.parseFloat(JOptionPane.showInputDialog(null, "Informe a quantidade de reais a converter: "));
+		if ((dolar>0) && (reais>0)){
+			float resultado = reais/dolar;
+			System.out.println("O valor da conversão é: " + resultado);
+		} else {
+			JOptionPane.showMessageDialog(null, "Não foi possivel converter");
+		}
+	}
+
+}

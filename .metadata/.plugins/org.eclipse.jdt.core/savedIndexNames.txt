@@ -1,0 +1,19 @@
+INDEX VERSION 1.131+C:\Tacom\Java\ides\java-2020-12-workspace\.metadata\.plugins\org.eclipse.jdt.core
+4063355476.index
+765564306.index
+1133288397.index
+3821197419.index
+2721867311.index
+1264567066.index
+1393617199.index
+3390683285.index
+3263404496.index
+3446963340.index
+1278347011.index
+3008215422.index
+3577435833.index
+993343381.index
+3172894723.index
+1428764226.index
+1520870660.index
+1012462476.index

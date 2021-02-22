@@ -1,0 +1,18 @@
+package questao8;
+
+import javax.swing.JOptionPane;
+
+public class Questao8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int numero1 = Integer.parseInt(JOptionPane.showInputDialog(null,"Informe o primeiro número: "));
+		int numero2 = Integer.parseInt(JOptionPane.showInputDialog(null,"Informe o primeiro número: "));
+		for (int i=numero1;i<=numero2;i++) {
+			if (i % 2 !=0) {
+				System.out.println("Numero impar encontrado: " + i);
+			}
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+package questao15;
+
+import javax.swing.JOptionPane;
+
+public class Questao15 {
+	public static void main(String[] args) {
+		String linha = JOptionPane.showInputDialog(null, "Informe o texto a ser validado");
+	    StringBuffer sb = new StringBuffer();
+
+	    char [] caracteres = linha.toCharArray();
+
+	    for (Character caracter : caracteres) {
+	        if (Character.isDigit(caracter)) {
+	            sb.append(caracter);
+	        }
+	    }
+
+	    System.out.println(sb.toString());
+	}
+
+}

@@ -1,0 +1,30 @@
+package questao2;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class Questao2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File arquivo = new File( "C:\\Users\\fabiano.almeida\\Downloads\\Prova Estagiário.txt" );
+		boolean existe = arquivo.exists();
+		if (existe) {
+			FileReader fr = new FileReader( arquivo );
+			BufferedReader br = new BufferedReader( fr );
+			while( br.ready() ){
+				//lê a proxima linha
+				String linha = br.readLine();
+				 //faz algo com a linha
+				}
+			br.close();
+			fr.close();
+		}
+		
+		
+		
+	}
+
+}

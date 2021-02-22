@@ -1,0 +1,29 @@
+package testes;
+
+import java.io.File;
+import java.util.Arrays;
+
+public class TesteMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello World");
+		
+		String diretorioSource = "C:\\teste";
+		File raiz = new File(diretorioSource);
+
+        File files[] = raiz.listFiles();
+        Arrays.sort(files);
+        System.out.println("Total de Imagens: " + files.length);
+        int indice = 0;
+        for (File f : files) {
+            indice++;
+            System.out.println("Imagem " + indice + " de " + files.length);
+            if (f.isFile()) {
+                System.out.println(diretorioSource + f.getName());
+                listaArquivoSource.add(diretorioSource + f.getName());
+            }
+        }
+	}
+
+}

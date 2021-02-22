@@ -1,0 +1,19 @@
+package questao15;
+
+public class Questao15 {
+	public static void main(String[] args) {
+		String teste = "ad8sa7d89723***&777a77de²²><;;/°#$%a11123";
+	    StringBuffer sb = new StringBuffer();
+
+	    char [] caracteres = teste.toCharArray();
+
+	    for (Character caracter : caracteres) {
+	        if (Character.isDigit(caracter)) {
+	            sb.append(caracter);
+	        }
+	    }
+
+	    System.out.println(sb.toString());
+	}
+
+}

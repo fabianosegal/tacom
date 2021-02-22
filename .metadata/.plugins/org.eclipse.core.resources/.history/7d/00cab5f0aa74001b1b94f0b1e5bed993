@@ -1,0 +1,22 @@
+package questao10;
+
+import javax.swing.JOptionPane;
+
+public class Questao10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int numero1;
+		int resultado=0;
+		numero1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o numero a ser fatorado: "));
+		if (numero1 > 1) {
+			resultado=numero1;
+			for (int i=numero1;i>1;i--) {
+				resultado = resultado * i; 
+			}
+			System.out.println("Fatorial de " + numero1 + " é : " + resultado);
+		}
+		
+	}
+
+}

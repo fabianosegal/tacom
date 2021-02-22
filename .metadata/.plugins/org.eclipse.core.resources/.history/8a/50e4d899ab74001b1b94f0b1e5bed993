@@ -1,0 +1,19 @@
+package questao10;
+
+import javax.swing.JOptionPane;
+
+public class Questao10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x;
+		int f;
+		x = Integer.parseInt(JOptionPane.showInputDialog(null, "Informe o numero a ser fatorado: "));
+		while (x > 1){
+			  f = f *(x-1); x--;
+			                    }
+			  System.out.println(f);
+		
+	}
+
+}

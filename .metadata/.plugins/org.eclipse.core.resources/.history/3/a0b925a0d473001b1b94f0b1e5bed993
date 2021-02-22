@@ -1,0 +1,12 @@
+package questao9;
+
+import javax.swing.JOptionPane;
+
+public class Questao9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int numero1 = Integer.parseInt(JOptionPane.showInputDialog(null,"Informe o primeiro número ")
+	}
+
+}

@@ -1,0 +1,20 @@
+package questao10;
+
+import javax.swing.JOptionPane;
+
+public class Questao10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		long numero=Integer.parseInt(JOptionPane.showInputDialog(null,"Informe o numero a fatorar"));
+		System.out.println("O fatorial de " + numero + " é :" + fatorial(numero));
+	}
+	public static long fatorial(long numero1) {
+		long fatorial=1;
+		for (long i=numero1;i>=2;i--) {
+			fatorial *=i;
+		}
+		return fatorial;
+	}
+
+}
